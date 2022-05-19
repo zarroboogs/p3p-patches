@@ -24,14 +24,14 @@
 
 ### Patching `EBOOT.BIN`
 
-If the CWCheat method doesn't work you can unpack the game and directly patch `EBOOT.BIN` with the provided [xdelta][xdelta_url] patches:
+If the CWCheat method doesn't work, you can unpack the game and directly patch `EBOOT.BIN` with the provided [xdelta][xdelta_url] patches:
 
 ```cmd
 xdelta -vfn merge -m intro.xdelta mod.xdelta tmp.xdelta
 xdelta -vfn -d -s EBOOT.BIN tmp.xdelta PATCHED_EBOOT.BIN
 ```
 
-Overwrite the original `EBOOT.BIN` with the patched file and boot the unpacked game.
+Overwrite the original `EBOOT.BIN` with the patched file, then repack and boot the game.
 
 ## Available Patches
 
